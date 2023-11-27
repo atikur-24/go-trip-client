@@ -5,3 +5,14 @@
 .bg-blue-3 {
   background-color: #087dc2;
 }
+
+.my-btn {
+  @apply font-medium tracking-wide text-white transition duration-200 bg-cyan-600 md:font-semibold px-2 py-2 rounded;
+}
+
+/* .nav-container {
+  @apply mx-auto max-w-[2550px] px-2 md:px-6 lg:px-12;
+}
+.my-container {
+  @apply container mx-auto px-4 py-14 lg:py-16 xl:px-6;
+} */
