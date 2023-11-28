@@ -35,11 +35,11 @@ const menuItems = [
 
 const Navbar = () => {
   return (
-    <header className="pt-20">
+    <header>
       {/* top navbar */}
       <TopBar />
       {/* main menu */}
-      <nav className="flex items-center justify-between my-5">
+      <nav className="flex items-center justify-between my-5 px-10">
         <Logo />
         <div className="flex items-center gap-4">
           <ul className="flex gap-4 text-lg">

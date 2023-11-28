@@ -6,6 +6,10 @@
   background-color: #087dc2;
 }
 
+.bg-banner {
+  background: rgb(47, 100, 127);
+}
+
 .my-btn {
   @apply font-medium tracking-wide text-white transition duration-200 bg-cyan-600 md:font-semibold px-2 py-2 rounded;
 }
