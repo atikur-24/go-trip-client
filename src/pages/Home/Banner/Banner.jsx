@@ -1,3 +1,4 @@
+import { Facebook, Instagram } from "@mui/icons-material";
 import { GrLocation } from "react-icons/gr";
 
 const Banner = () => {
@@ -60,8 +61,10 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div>facebook</div>
-        <div>instagram</div>
+        <div className="flex gap-4">
+          <Facebook />
+          <Instagram />
+        </div>
       </div>
     </section>
   );
