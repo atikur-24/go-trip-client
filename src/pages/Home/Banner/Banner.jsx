@@ -60,6 +60,8 @@ const Banner = () => {
             </div>
           </div>
         </div>
+        <div>facebook</div>
+        <div>instagram</div>
       </div>
     </section>
   );
