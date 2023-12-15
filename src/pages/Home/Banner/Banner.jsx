@@ -61,10 +61,10 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-4">
+        {/* <div className="flex gap-4">
           <Facebook />
           <Instagram />
-        </div>
+        </div> */}
       </div>
     </section>
   );
