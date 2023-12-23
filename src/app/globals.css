@@ -2,33 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-blue-3 {
-  background-color: #087dc2;
+@layer components {
+  /* main container */
+  .nav-container {
+    @apply mx-auto max-w-[2550px] px-2 md:px-6 lg:px-12;
+  }
+
+  .my-container {
+    @apply container mx-auto px-4 py-14 lg:py-16 xl:px-6;
+  }
+
+  /* active link styles */
+  .active {
+    @apply text-base font-bold uppercase tracking-wide  text-title-color underline decoration-my-accent decoration-2 underline-offset-8;
+  }
+  .default {
+    @apply text-base font-semibold uppercase tracking-wide  text-gray-6  hover:text-my-accent;
+  }
+
+  /* buttons  */
+  .my-btn {
+    @apply border-0 py-2 px-5 bg-my-primary font-medium tracking-wide text-white transition duration-200 hover:bg-[#16b4ac] md:font-semibold;
+  }
+  .cart-btn {
+    @apply inline-flex items-center justify-center gap-1 rounded-full bg-my-primary px-2 py-1 text-xs font-medium uppercase text-white transition duration-300 hover:bg-my-accent md:px-3 md:py-2 lg:gap-2 lg:px-5 lg:py-4 lg:text-sm lg:font-semibold;
+  }
+  .cart-btn-outline {
+    @apply inline-flex w-full items-center justify-center gap-2 rounded-full border border-my-primary p-1 text-[10px] font-medium uppercase text-my-primary transition duration-300 hover:bg-my-primary hover:text-white lg:text-xs;
+  }
+  .req-btn-lg {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-red-500 px-3 py-3 text-sm font-semibold uppercase text-white transition duration-300 hover:bg-red-400 lg:px-5 lg:py-4;
+  }
+  .req-btn-sm {
+    @apply w-full  rounded-full border border-red-500 bg-red-500 p-1 text-[10px] uppercase text-white transition duration-300 hover:border-red-400 hover:bg-red-400 lg:text-xs;
+  }
+  .my-btn-outline {
+    @apply btn-sm rounded-full border border-my-primary font-medium text-my-primary transition-all duration-300 lg:btn-md hover:bg-my-primary hover:text-white active:hover:transform-none active:focus:transform-none md:font-semibold lg:font-bold;
+  }
+  .circle-btn {
+    @apply rounded-full border bg-my-primary font-bold tracking-wide text-white transition duration-300 hover:bg-[#16b4ac] hover:text-white active:hover:transform-none active:focus:transform-none;
+  }
+  .login-btn {
+    @apply border-0  bg-my-accent  font-medium text-white transition duration-200 hover:bg-[#16b4ac] active:hover:transform-none active:focus:transform-none md:font-semibold;
+  }
+  .submit-btn {
+    @apply rounded-md bg-my-primary px-3 py-2 text-sm font-medium uppercase tracking-wide text-white transition-all hover:bg-my-accent lg:px-6 lg:py-3 lg:text-base lg:font-semibold;
+  }
+  .reset-btn {
+    @apply rounded-md bg-red-500 px-3 py-2 text-sm font-medium uppercase tracking-wide text-white transition-all hover:bg-red-400 lg:px-6 lg:py-3 lg:text-base lg:font-semibold;
+  }
 }
 
-.bg-banner {
-  background: rgb(47, 100, 127);
-}
-
-.my-btn {
-  @apply font-medium tracking-wide text-white transition duration-200 bg-cyan-600 md:font-semibold px-2 py-2 rounded;
-}
-
-.nav-container {
-  @apply mx-auto max-w-[2550px] px-2 md:px-6 lg:px-12;
-}
-.my-container {
-  @apply container mx-auto px-4 py-14 lg:py-16 xl:px-6;
-}
-
-input {
-  background: none;
-  border: none;
-  outline: none;
-  width: 100%;
-  font-size: 14px;
-  font-weight: 500;
-  &::placeholder {
-    font-size: 14px;
+@layer utilities {
+  .bg-blue-3 {
+    background-color: #087dc2;
+  }
+  
+  .bg-banner {
+    background: rgb(47, 100, 127);
   }
 }

@@ -43,7 +43,7 @@ const Navbar = () => {
         <Logo />
         <div className="flex items-center gap-4">
           <ul className="flex gap-4 text-lg">
-            {menuItems.map(({ path, title, idx }) => (
+            {menuItems.map(({ path, title }, idx) => (
               <li key={idx}>
                 <Link href={path}>{title}</Link>
               </li>
