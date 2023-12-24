@@ -5,10 +5,12 @@ import California from "@/assets/destination/california.jpg";
 import United_states from "@/assets/destination/united_states.jpg";
 import Virginia from "@/assets/destination/virginia.jpg";
 import San_francisco from "@/assets/destination/san_francisco.jpg";
+import SectionTitle from "@/components/SectionTitle";
 
 const TopDestination = () => {
   return (
     <section className="my-container">
+      <SectionTitle title={"Top Destinations"} content="Far far away, behind the word mountains, far from the countries Vokalia" />
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-3 lg:gap-6">
         <div className="relative group items-center justify-center text-center overflow-hidden">
           <Image className="object-cover" src={Nevada} alt="Nevada" />

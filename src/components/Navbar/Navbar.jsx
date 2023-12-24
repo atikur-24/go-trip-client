@@ -1,4 +1,4 @@
-import Logo from "@/components/Logo/Logo";
+import Logo from "@/components/Logo";
 import Link from "next/link";
 import TopBar from "./TopBar/TopBar";
 
