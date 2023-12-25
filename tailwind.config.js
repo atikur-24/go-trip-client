@@ -40,5 +40,5 @@ module.exports = {
       "yellow-500": "#fbb614",
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
